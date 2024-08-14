@@ -1,0 +1,118 @@
+:root{
+    --fuenteprincipal:arial;
+    --colorprincipal:#D8DFE8;
+    --colorboton:#0A3871;
+    --blanco:#ffffff;
+    --gris:rgb(83, 83, 83);
+    --fuentebotones:sans-serif;
+    --negro:#000000;
+}
+body{
+  background-color: var(--colorprincipal);
+
+}
+header{
+  background-color:var(--colorprincipal);
+}
+.header{
+  background-color:var(--colorprincipal);
+  width: 90%;
+  margin: 40px auto 0 auto;
+ }
+.main{
+  width: 90%;
+  margin: auto 40px auto auto;
+  background-color: var(--gris);
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  min-height: calc(100vh - 91px - 72px);
+  align-items: end;
+}
+.areapregunta{
+  background-color:var(--colorprincipal);
+height: 100%;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+}
+
+.encriptador{
+    font-size: 32px;
+    width: 100%;
+    color: var(--colorboton);
+    background: none;
+    border: none;
+    outline: none;
+    resize: none;
+    margin-left: 20px;
+  }
+  .encriptador::placeholder{
+    color: var(--colorboton);
+  }
+/*Pantalla Table1*/
+/*aqui van los estilos de los botones*/
+.area_botones{
+  color: var(--gris);
+  padding: 24px;
+}
+.botones{
+  display: flex;
+  gap: 24px;
+  margin-top: 16px;
+
+}
+.boton{
+  max-width:328px;
+  width: 40%;
+  height: 36px;
+  border-radius: 12px;
+  margin: 10px 10% 10px 0;
+  border: none;
+}
+.botonencriptar{
+  background-color: var(--colorboton);
+  color: var(--blanco);
+}
+.botondesencriptar{
+  background-color: var(--blanco);
+  color: var(--colorboton);
+}
+/*Area en blanco donde se mostrara el texto desencriptado*/
+.arearespuesta{
+  background-color: var(--blanco);
+  height:calc(100% + 48px);
+  border-radius: 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  img{
+    width: 60%;
+    height:50%;
+    margin:auto;
+  }
+  h3{
+    font-size: 16px;
+    text-transform: capitalize;
+    color: var(--negro);
+    margin-top: 16px;
+  }
+  p{
+    color: var(--gris);
+  }
+  -webkit-box-shadow: -8px 10px 65px -25px rgba(64,62,64,0.87);
+-moz-box-shadow: -8px 10px 65px -25px rgba(64,62,64,0.87);
+box-shadow: -8px 10px 65px -25px rgba(64,62,64,0.87);
+  }
+.botoncopiar{
+  color: var(--gris);
+  width: 80%;
+  margin: auto;
+}
+footer{
+  display: flex;
+  justify-content: space-between;
+  margin:10px;
+  color: var(--gris);
+  text-transform: capitalize;
+}
